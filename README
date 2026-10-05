@@ -1,0 +1,33 @@
+# Handwritten Digit Recognition using Neural Networks (MNIST)
+
+An end-to-end deep learning project that trains a **Multilayer Perceptron (MLP)**
+to classify handwritten digits (0–9) from the MNIST dataset.
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone / create the project
+mkdir mnist-digit-recognition && cd mnist-digit-recognition
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate          # Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the complete pipeline (train + evaluate)
+python main.py
+```
+
+## Predict from an image
+
+After training the model, launch the image uploader:
+
+```bash
+python -m src.upload_app
+```
+
+Choose an image containing one handwritten digit. The app accepts PNG, JPG,
+BMP, GIF, and TIFF images, then displays the predicted digit and confidence.
+For best results, use a clear image with one digit and minimal surrounding text.
